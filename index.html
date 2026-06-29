@@ -7,7 +7,7 @@
 <meta name="x-apple-disable-message-reformatting">
 <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
 <meta name="color-scheme" content="light only">
-<meta name="supported-color-schemes" content="light">
+<meta name="supported-color-schemes" content="light only">
 <title>Australis Property Conveyancing — Email Signature</title>
 
 <!--[if mso]>
@@ -17,7 +17,6 @@
 </style>
 <![endif]-->
 
-<!-- Web fonts: progressive enhancement (Outlook desktop ignores these and falls back to Segoe UI/Arial) -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style type="text/css">
@@ -28,7 +27,22 @@
   table { border-collapse:collapse !important; mso-table-lspace:0pt; mso-table-rspace:0pt; }
   a[x-apple-data-detectors], .aBn { color:inherit !important; text-decoration:none !important; font-size:inherit !important; font-weight:inherit !important; }
 
-  /* Responsive: honoured by Apple Mail, Gmail/Outlook mobile & web; ignored by Outlook desktop */
+  /* ---------- DARK-MODE LOCK: keep the signature light & legible ---------- */
+  @media (prefers-color-scheme: dark) {
+    .dm-bg    { background-color:#f4f1ec !important; }
+    .dm-navy  { color:#0D4A7C !important; }
+    .dm-gold  { color:#C89D4A !important; }
+    .dm-dark  { color:#333333 !important; }
+    .dm-muted { color:#8a8a8a !important; }
+  }
+  /* New Outlook / Outlook.com dark mode (data-ogsb = background, data-ogsc = colour) */
+  [data-ogsb] .dm-bg    { background-color:#f4f1ec !important; }
+  [data-ogsc] .dm-navy  { color:#0D4A7C !important; }
+  [data-ogsc] .dm-gold  { color:#C89D4A !important; }
+  [data-ogsc] .dm-dark  { color:#333333 !important; }
+  [data-ogsc] .dm-muted { color:#8a8a8a !important; }
+
+  /* ---------- Responsive ---------- */
   @media only screen and (max-width:600px) {
     .sig-container { width:100% !important; max-width:100% !important; }
     .px           { padding-left:20px !important; padding-right:20px !important; }
@@ -49,49 +63,46 @@
 <table role="presentation" align="left" cellpadding="0" cellspacing="0" border="0" width="650"><tr><td>
 <![endif]-->
 
-<table role="presentation" class="sig-container" cellpadding="0" cellspacing="0" border="0" width="650"
-       style="width:650px; max-width:650px; border-top:3px solid #C89D4A; border-bottom:3px solid #0D4A7C;">
+<table role="presentation" class="sig-container dm-bg" cellpadding="0" cellspacing="0" border="0" width="650"
+       style="width:650px; max-width:650px; background-color:#f4f1ec; border-top:3px solid #C89D4A; border-bottom:3px solid #0D4A7C;">
 
   <!-- ===================== HEADER: LOGO + PERSON ===================== -->
   <tr>
-  <td class="px" style="padding:30px 34px 28px 0;">
+  <td class="px dm-bg" style="padding:30px 34px 28px 0; background-color:#f4f1ec;">
 
     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;">
     <tr>
 
-      <!-- LOGO (width only + height:auto = always proportional, never squashed) -->
-      <td class="col col-left" width="170" valign="top" style="width:170px; vertical-align:top;">
-        <img src="logo.png"
+      <!-- LOGO (absolute hosted URL; width only + height:auto = always proportional) -->
+      <td class="col col-left dm-bg" width="235" valign="top" style="width:235px; background-color:#f4f1ec; vertical-align:top;">
+        <img src="https://signatures-australisproperty-v2.netlify.app/logo.png"
              alt="Australis Property Conveyancing"
-             width="1210"
-             style="display:block; width:210px; height:auto; max-width:210px; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;">
+             width="235"
+             style="display:block; width:235px; height:auto; max-width:235px; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;">
       </td>
 
-      <td class="gap-cell" width="28" style="width:28px; font-size:0; line-height:0;">&nbsp;</td>
+      <td class="gap-cell dm-bg" width="28" style="width:28px; background-color:#f4f1ec; font-size:0; line-height:0;">&nbsp;</td>
       <td class="rule-cell" width="1" bgcolor="#e5dccb" style="width:1px; background:#e5dccb; font-size:0; line-height:0;">&nbsp;</td>
-      <td class="gap-cell" width="30" style="width:30px; font-size:0; line-height:0;">&nbsp;</td>
+      <td class="gap-cell dm-bg" width="30" style="width:30px; background-color:#f4f1ec; font-size:0; line-height:0;">&nbsp;</td>
 
-      <!-- PERSON + CONTACT (top-aligned with logo) -->
-      <td class="col col-right" width="347" valign="top" style="width:347px; vertical-align:top;">
+      <!-- PERSON + CONTACT -->
+      <td class="col col-right dm-bg" width="322" valign="top" style="width:322px; background-color:#f4f1ec; vertical-align:top;">
 
         <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:100%;">
 
-          <!-- Name -->
           <tr>
-            <td style="font-family:'Poppins','Lexend','Segoe UI',Helvetica,Arial,sans-serif; font-size:24px; color:#0D4A7C; font-weight:600; letter-spacing:0.3px; mso-line-height-rule:exactly; line-height:28px;">
+            <td class="dm-navy" style="font-family:'Poppins','Lexend','Segoe UI',Helvetica,Arial,sans-serif; font-size:24px; color:#0D4A7C; font-weight:600; letter-spacing:0.3px; mso-line-height-rule:exactly; line-height:28px;">
               Ravinder&nbsp;Kaur&nbsp;Virk
             </td>
           </tr>
           <tr><td style="height:8px; line-height:8px; font-size:0;">&nbsp;</td></tr>
 
-          <!-- Title -->
           <tr>
-            <td style="font-family:'Poppins','Lexend','Segoe UI',Helvetica,Arial,sans-serif; font-size:10.5px; color:#C89D4A; font-weight:600; letter-spacing:2.5px; text-transform:uppercase; mso-line-height-rule:exactly; line-height:14px;">
+            <td class="dm-gold" style="font-family:'Poppins','Lexend','Segoe UI',Helvetica,Arial,sans-serif; font-size:10.5px; color:#C89D4A; font-weight:600; letter-spacing:2.5px; text-transform:uppercase; mso-line-height-rule:exactly; line-height:14px;">
               Licensed&nbsp;Property&nbsp;Conveyancer
             </td>
           </tr>
 
-          <!-- Gold accent -->
           <tr><td style="height:18px; line-height:18px; font-size:0;">&nbsp;</td></tr>
           <tr>
             <td style="padding:0; line-height:0; font-size:0;">
@@ -102,26 +113,25 @@
           </tr>
           <tr><td style="height:20px; line-height:20px; font-size:0;">&nbsp;</td></tr>
 
-          <!-- Contacts -->
           <tr>
             <td>
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:100%; font-family:'Poppins','Lexend','Segoe UI',Helvetica,Arial,sans-serif;">
                 <tr>
-                  <td valign="middle" width="54" style="width:54px; padding:7px 12px 7px 0; color:#0D4A7C; font-size:9.5px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; mso-line-height-rule:exactly; line-height:16px;">Email</td>
+                  <td class="dm-navy" valign="middle" width="50" style="width:50px; padding:7px 12px 7px 0; color:#0D4A7C; font-size:9.5px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; mso-line-height-rule:exactly; line-height:16px;">Email</td>
                   <td valign="middle" style="padding:7px 0; mso-line-height-rule:exactly; line-height:16px;">
-                    <a href="mailto:info@australispropertyconveyancing.com.au" style="color:#333333; text-decoration:none; font-size:13px;">info@australispropertyconveyancing.com.au</a>
+                    <a class="dm-dark" href="mailto:info@australispropertyconveyancing.com.au" style="color:#333333; text-decoration:none; font-size:12.5px;">info@australispropertyconveyancing.com.au</a>
                   </td>
                 </tr>
                 <tr>
-                  <td valign="middle" width="54" style="width:54px; padding:7px 12px 7px 0; color:#0D4A7C; font-size:9.5px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; mso-line-height-rule:exactly; line-height:16px;">Phone</td>
+                  <td class="dm-navy" valign="middle" width="50" style="width:50px; padding:7px 12px 7px 0; color:#0D4A7C; font-size:9.5px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; mso-line-height-rule:exactly; line-height:16px;">Phone</td>
                   <td valign="middle" style="padding:7px 0; mso-line-height-rule:exactly; line-height:16px;">
-                    <a href="tel:+61432530957" style="color:#333333; text-decoration:none; font-size:13px;">+61&nbsp;432&nbsp;530&nbsp;957</a>
+                    <a class="dm-dark" href="tel:+61432530957" style="color:#333333; text-decoration:none; font-size:12.5px;">+61&nbsp;432&nbsp;530&nbsp;957</a>
                   </td>
                 </tr>
                 <tr>
-                  <td valign="middle" width="54" style="width:54px; padding:7px 12px 7px 0; color:#0D4A7C; font-size:9.5px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; mso-line-height-rule:exactly; line-height:16px;">Web</td>
+                  <td class="dm-navy" valign="middle" width="50" style="width:50px; padding:7px 12px 7px 0; color:#0D4A7C; font-size:9.5px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; mso-line-height-rule:exactly; line-height:16px;">Web</td>
                   <td valign="middle" style="padding:7px 0; mso-line-height-rule:exactly; line-height:16px;">
-                    <a href="https://australispropertyconveyancing.com.au" style="color:#333333; text-decoration:none; font-size:13px;">australispropertyconveyancing.com.au</a>
+                    <a class="dm-dark" href="https://australispropertyconveyancing.com.au" style="color:#333333; text-decoration:none; font-size:12.5px;">australispropertyconveyancing.com.au</a>
                   </td>
                 </tr>
               </table>
@@ -137,9 +147,9 @@
   </td>
   </tr>
 
-  <!-- ===================== GOLD BAR (full-width) ===================== -->
+  <!-- ===================== GOLD BAR ===================== -->
   <tr>
-  <td class="px" style="padding:0;">
+  <td class="px dm-bg" style="padding:0; background-color:#f4f1ec;">
     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;">
       <tr><td height="1" bgcolor="#C89D4A" style="height:1px; line-height:1px; font-size:0; background:#C89D4A;">&nbsp;</td></tr>
     </table>
@@ -148,25 +158,25 @@
 
   <!-- ===================== TAGLINE + SERVICES ===================== -->
   <tr>
-  <td class="px" style="padding:18px 34px 4px 0;">
-    <div style="font-family:'Poppins','Lexend','Segoe UI',Helvetica,Arial,sans-serif; font-style:italic; font-size:14px; color:#0D4A7C; mso-line-height-rule:exactly; line-height:20px;">
+  <td class="px dm-bg" style="padding:18px 34px 4px 0; background-color:#f4f1ec;">
+    <div class="dm-navy" style="font-family:'Poppins','Lexend','Segoe UI',Helvetica,Arial,sans-serif; font-style:italic; font-size:14px; color:#0D4A7C; mso-line-height-rule:exactly; line-height:20px;">
       &ldquo;Making Property Transfers Simple &amp; Stress-Free&rdquo;
     </div>
   </td>
   </tr>
   <tr>
-  <td class="px" style="padding:0 34px 20px 0;">
-    <div class="svc-line" style="font-family:'Poppins','Lexend','Segoe UI',Helvetica,Arial,sans-serif; font-size:11.5px; color:#444444; letter-spacing:0.3px; mso-line-height-rule:exactly; line-height:18px;">
-      Property&nbsp;Conveyancing&nbsp;&nbsp;<span style="color:#C89D4A;">&#9670;</span>&nbsp;&nbsp;Contract&nbsp;Reviews&nbsp;&nbsp;<span style="color:#C89D4A;">&#9670;</span>&nbsp;&nbsp;Property&nbsp;Settlements&nbsp;&nbsp;<span style="color:#C89D4A;">&#9670;</span>&nbsp;&nbsp;Title&nbsp;Transfers
+  <td class="px dm-bg" style="padding:0 34px 20px 0; background-color:#f4f1ec;">
+    <div class="svc-line dm-dark" style="font-family:'Poppins','Lexend','Segoe UI',Helvetica,Arial,sans-serif; font-size:11.5px; color:#444444; letter-spacing:0.3px; mso-line-height-rule:exactly; line-height:18px;">
+      Property&nbsp;Conveyancing&nbsp;&nbsp;<span class="dm-gold" style="color:#C89D4A;">&#9670;</span>&nbsp;&nbsp;Contract&nbsp;Reviews&nbsp;&nbsp;<span class="dm-gold" style="color:#C89D4A;">&#9670;</span>&nbsp;&nbsp;Property&nbsp;Settlements&nbsp;&nbsp;<span class="dm-gold" style="color:#C89D4A;">&#9670;</span>&nbsp;&nbsp;Title&nbsp;Transfers
     </div>
   </td>
   </tr>
 
-  <!-- ===================== CONFIDENTIALITY (concise) ===================== -->
+  <!-- ===================== CONFIDENTIALITY ===================== -->
   <tr>
-  <td class="px" style="padding:14px 34px 24px 0; border-top:1px solid #ececec;">
-    <div style="font-family:'Poppins','Lexend','Segoe UI',Helvetica,Arial,sans-serif; font-size:10px; color:#8a8a8a; mso-line-height-rule:exactly; line-height:16px;">
-      <span style="color:#0D4A7C; font-weight:600; letter-spacing:0.5px;">CONFIDENTIALITY&nbsp;NOTICE:</span>
+  <td class="px dm-bg" style="padding:14px 34px 24px 0; background-color:#f4f1ec; border-top:1px solid #ececec;">
+    <div class="dm-muted" style="font-family:'Poppins','Lexend','Segoe UI',Helvetica,Arial,sans-serif; font-size:10px; color:#8a8a8a; mso-line-height-rule:exactly; line-height:16px;">
+      <span class="dm-navy" style="color:#0D4A7C; font-weight:600; letter-spacing:0.5px;">CONFIDENTIALITY&nbsp;NOTICE:</span>
       This email and any attachments are confidential and may be legally privileged. If you are not the intended recipient, you must not use, copy, or disclose any part of it &mdash; please notify us and delete it immediately. Liability limited by a scheme approved under Professional Standards Legislation.
     </div>
   </td>
