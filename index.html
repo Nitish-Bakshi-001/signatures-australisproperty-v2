@@ -47,8 +47,8 @@
     .sig-container { width:100% !important; max-width:100% !important; }
     .px           { padding-left:20px !important; padding-right:20px !important; }
     .col          { display:block !important; width:100% !important; box-sizing:border-box !important; }
-    .col-right    { padding:20px 0 0 0 !important; border-top:1px solid #e5dccb !important; }
-    .gap-cell, .rule-cell { display:none !important; width:0 !important; max-width:0 !important; font-size:0 !important; line-height:0 !important; }
+    .col-left     { border-right:0 !important; padding-right:0 !important; }
+    .col-right    { padding:20px 0 0 0 !important; border-top:1px solid #cfc7b8 !important; }
     .svc-line     { font-size:11px !important; line-height:18px !important; }
   }
 </style>
@@ -73,20 +73,16 @@
     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;">
     <tr>
 
-      <!-- LOGO (absolute hosted URL; width only + height:auto = always proportional) -->
-      <td class="col col-left dm-bg" width="235" valign="top" style="width:235px; background-color:#ffffff; vertical-align:top;">
+      <!-- LOGO. Vertical divider = border-right on this cell (renders reliably in Outlook, unlike a 1px spacer cell). -->
+      <td class="col col-left dm-bg" width="235" valign="top" style="width:235px; padding-right:30px; border-right:1px solid #cfc7b8; background-color:#ffffff; vertical-align:top;">
         <img src="https://signatures-australisproperty-v2.netlify.app/logo.png"
              alt="Australis Property Conveyancing"
              width="235"
              style="display:block; width:235px; height:auto; max-width:235px; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;">
       </td>
 
-      <td class="gap-cell dm-bg" width="28" style="width:28px; background-color:#ffffff; font-size:0; line-height:0;">&nbsp;</td>
-      <td class="rule-cell" width="1" bgcolor="#e5dccb" style="width:1px; background:#e5dccb; font-size:0; line-height:0;">&nbsp;</td>
-      <td class="gap-cell dm-bg" width="30" style="width:30px; background-color:#ffffff; font-size:0; line-height:0;">&nbsp;</td>
-
       <!-- PERSON + CONTACT -->
-      <td class="col col-right dm-bg" width="322" valign="top" style="width:322px; background-color:#ffffff; vertical-align:top;">
+      <td class="col col-right dm-bg" width="320" valign="top" style="width:320px; padding-left:30px; background-color:#ffffff; vertical-align:top;">
 
         <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:100%;">
 
